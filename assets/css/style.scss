@@ -50,7 +50,7 @@ input:after {
 .container {
   position: relative;
   width: 100%;
-  max-width: 7048px;
+  // max-width: 7048px;
   margin: 0 auto;
 }
 
@@ -188,11 +188,15 @@ input:after {
     border-left: 0.5px solid #959595;
     border-bottom: 1px solid #959595;
 
+    &:nth-child(4n+1) {
+      border-left: 0;
+    }
+
     @media (min-width: 980px) {
       &:hover {
         .cards__content {
           .cards__content-footer {
-            bottom: 0;
+            bottom: -2px;
             transition: 0.3s;
             .cards__content-bottom {
               // display: flex;
@@ -609,6 +613,10 @@ input:after {
     text-decoration: none;
     color: #000;
 
+    &:nth-child(2n+1) {
+      border-left: 0;
+    }
+
     .cards-two__card-img {
       margin-bottom: 30px;
       width: 374px;
@@ -702,65 +710,21 @@ input:after {
     .cards__card {
       height: 70vh;
       max-height: 4500px;
-      // height: 712px;
       padding-top: 20px;
+      position: relative;
 
       .cards__content {
-        margin-top: 0px;
-        height: 66vh;
+        position: absolute;
+        bottom: 0;
+        // margin-top: 0px;
+        height: 64vh;
+        height: 94.8%;
         max-height: 4440px;
-        // height: 652px;
         background-size: auto 90%;
-        // background-size: calc(min(300px, 100%));
 
-        // .cards__content-footer {
-        //   padding: 30px 20px;
-        //   bottom: -123px;
-
-        //   .cards__content-title {
-        //     font-size: 30px;
-        //   }
-
-        //   .cards__content-price {
-        //     margin-top: 8px;
-
-        //     .cards__content-price-active {
-        //       font-size: 30px;
-        //     }
-
-        //     .cards__content-price-dis {
-        //       font-size: 25px;
-        //     }
-        //   }
-
-        //   .cards__content-bottom {
-        //     margin-top: 35px;
-        //     padding-top: 35px;
-
-        //     .cards__content-sizes {
-        //       .cards__content-size {
-        //         font-size: 27px;
-        //         &:not(:first-child) {
-        //           margin-left: 20px;
-        //         }
-        //       }
-
-        //       .active-size {
-        //         padding: 5px 6px;
-        //       }
-        //     }
-
-        //     .cards__content-added {
-        //       img {
-        //         width: 27px;
-        //       }
-        //       p {
-        //         margin-left: 15px;
-        //         font-size: 27px;
-        //       }
-        //     }
-        //   }
-        // }
+        .cards__content-footer {
+          bottom: -57px;
+        }
       }
     }
   }
