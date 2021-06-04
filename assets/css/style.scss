@@ -184,7 +184,7 @@ input:after {
     width: 25%;
     height: 512px;
     padding-top: 20px;
-    background-color: #e5e5e5;
+    background-color: #F5F5F5;
     border-left: 0.5px solid #959595;
     border-bottom: 1px solid #959595;
 
@@ -685,19 +685,25 @@ input:after {
 // Адаптация
 @media (min-width: 1960px) {
   .cards {
-    margin-top: 0px;
+    margin-top: 64px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
 
     .cards__card {
       height: 612px;
-      padding-top: 80px;
+      padding-top: 29px;
 
       .cards__content {
         margin-top: 0px;
         height: 552px;
         background-size: calc(min(300px, 100%));
+
+        .cards__content-footer {
+          position: absolute;
+          left: 0;
+          bottom: -57px;
+        }
       }
     }
   }
