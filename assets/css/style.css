@@ -746,42 +746,6 @@ input:after {
     max-height: 4440px;
     background-size: auto 90%;
   }
-  .cards .cards__card .cards__content .cards__content-footer {
-    padding: 30px 20px;
-    bottom: -123px;
-  }
-  .cards .cards__card .cards__content .cards__content-footer .cards__content-title {
-    font-size: 30px;
-  }
-  .cards .cards__card .cards__content .cards__content-footer .cards__content-price {
-    margin-top: 8px;
-  }
-  .cards .cards__card .cards__content .cards__content-footer .cards__content-price .cards__content-price-active {
-    font-size: 30px;
-  }
-  .cards .cards__card .cards__content .cards__content-footer .cards__content-price .cards__content-price-dis {
-    font-size: 25px;
-  }
-  .cards .cards__card .cards__content .cards__content-footer .cards__content-bottom {
-    margin-top: 35px;
-    padding-top: 35px;
-  }
-  .cards .cards__card .cards__content .cards__content-footer .cards__content-bottom .cards__content-sizes .cards__content-size {
-    font-size: 27px;
-  }
-  .cards .cards__card .cards__content .cards__content-footer .cards__content-bottom .cards__content-sizes .cards__content-size:not(:first-child) {
-    margin-left: 20px;
-  }
-  .cards .cards__card .cards__content .cards__content-footer .cards__content-bottom .cards__content-sizes .active-size {
-    padding: 5px 6px;
-  }
-  .cards .cards__card .cards__content .cards__content-footer .cards__content-bottom .cards__content-added img {
-    width: 27px;
-  }
-  .cards .cards__card .cards__content .cards__content-footer .cards__content-bottom .cards__content-added p {
-    margin-left: 15px;
-    font-size: 27px;
-  }
 
   .dropdown-wrapper {
     height: 70vh;

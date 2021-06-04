@@ -713,54 +713,54 @@ input:after {
         background-size: auto 90%;
         // background-size: calc(min(300px, 100%));
 
-        .cards__content-footer {
-          padding: 30px 20px;
-          bottom: -123px;
+        // .cards__content-footer {
+        //   padding: 30px 20px;
+        //   bottom: -123px;
 
-          .cards__content-title {
-            font-size: 30px;
-          }
+        //   .cards__content-title {
+        //     font-size: 30px;
+        //   }
 
-          .cards__content-price {
-            margin-top: 8px;
+        //   .cards__content-price {
+        //     margin-top: 8px;
 
-            .cards__content-price-active {
-              font-size: 30px;
-            }
+        //     .cards__content-price-active {
+        //       font-size: 30px;
+        //     }
 
-            .cards__content-price-dis {
-              font-size: 25px;
-            }
-          }
+        //     .cards__content-price-dis {
+        //       font-size: 25px;
+        //     }
+        //   }
 
-          .cards__content-bottom {
-            margin-top: 35px;
-            padding-top: 35px;
+        //   .cards__content-bottom {
+        //     margin-top: 35px;
+        //     padding-top: 35px;
 
-            .cards__content-sizes {
-              .cards__content-size {
-                font-size: 27px;
-                &:not(:first-child) {
-                  margin-left: 20px;
-                }
-              }
+        //     .cards__content-sizes {
+        //       .cards__content-size {
+        //         font-size: 27px;
+        //         &:not(:first-child) {
+        //           margin-left: 20px;
+        //         }
+        //       }
 
-              .active-size {
-                padding: 5px 6px;
-              }
-            }
+        //       .active-size {
+        //         padding: 5px 6px;
+        //       }
+        //     }
 
-            .cards__content-added {
-              img {
-                width: 27px;
-              }
-              p {
-                margin-left: 15px;
-                font-size: 27px;
-              }
-            }
-          }
-        }
+        //     .cards__content-added {
+        //       img {
+        //         width: 27px;
+        //       }
+        //       p {
+        //         margin-left: 15px;
+        //         font-size: 27px;
+        //       }
+        //     }
+        //   }
+        // }
       }
     }
   }
