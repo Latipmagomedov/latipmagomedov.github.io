@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Madetolove - Главная</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="favicon.png" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__desktop">
+        <div class="header__section header__1">
+          <a href="/" class="header__section-50 header__logo-wrapper">
+            <img src="assets/images/logo.svg" alt="logo" class="header__logo" />
+          </a>
+
+          <a href="#" class="header__section-50 header__nav-link">
+            <p>О нас</p>
+            <img src="assets/images/icons/arrow-bottom.svg" alt="icon" />
+          </a>
+        </div>
+
+        <div class="header__section header__2">
+          <div
+            class="header__section-50 header__nav-link"
+            data-open-dropdown="catalog"
+          >
+            <p>Каталог</p>
+            <img src="assets/images/icons/arrow-bottom.svg" alt="icon" />
+          </div>
+          <div
+            class="header__section-50 header__nav-link header__nav-link-cities"
+            data-open-dropdown="city-desk"
+          >
+            <p>Махачкала</p>
+            <img src="assets/images/icons/arrow-bottom.svg" alt="icon" />
+
+            <div class="header__nav-link__cities" data-dropdown="city-desk">
+              <a href="#" class="header__nav-link__city">
+                <div class="header__nav-link__radio">
+                  <span></span>
+                </div>
+                <p>Москва</p>
+              </a>
+              <a href="#" class="header__nav-link__city header__nav-link__city-active">
+                <div class="header__nav-link__radio">
+                  <span></span>
+                </div>
+                <p>Москва</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="header__section header__3">
+          <a href="tel:+79660042229" class="header__section-100 header__tel">
+            <img src="assets/images/icons/tel.svg" alt="Telephone" />
+            <p>+7 (966) 004-22-29</p>
+          </a>
+        </div>
+
+        <div class="header__section header__4">
+          <div class="header__section-50">
+            <a href="#" class="header__icon">
+              <img src="assets/images/icons/instagram.svg" alt="instagram" />
+            </a>
+            <a href="#" class="header__icon" data-open-modal="search">
+              <img src="assets/images/icons/search.svg" alt="search" />
+            </a>
+          </div>
+
+          <div class="header__section-50 header__section-last">
+            <a href="#" class="header__icon">
+              <img src="assets/images/icons/heart.svg" alt="heart" />
+            </a>
+            <div class="header__icon header__icon-cart" data-open-modal="cart">
+              <img src="assets/images/icons/cart.svg" alt="cart" />
+              <p class="header__icon-length">13</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__mobile">
+        <div class="header__mobile-container">
+          <div class="header__mobile-header">
+            <div class="header__mobile-icon"></div>
+            <a href="/#" class="header__mobile-logo">
+              <img src="assets/images/logo.svg" alt="Madetolove" />
+            </a>
+            <div class="header__mobile-search" data-open-modal="search">
+              <img src="assets/images/icons/search.svg" alt="search" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="modal cart" data-modal="cart">
+          <div class="modal__filter"></div>
+          <div class="cart__content modal__content">
+            <div class="cart__header">
+              <div class="cart__header-title">Ваш заказ</div>
+              <div class="cart__header-btns">
+                <!-- Кнопка отображается только если в корзине есть товары -->
+                <button class="cart__header-clear">Очистить список</button>
+                <button
+                  class="cart__header-close"
+                  data-close-modal="cart"
+                ></button>
+              </div>
+            </div>
+
+            <!-- Если нету товаров то показываем этот текст -->
+            <div class="cart__none-content cart__none-content-mobile" style="display: none">
+              <img src="assets/images/icons/none-cart.svg" class="desk-none" alt="cart" >
+              <p>Список ваших покупок пуст</p>
+              <a href="/listing.html" class="desk-none">В каталог <img src="assets/images/icons/arrow-right.svg" alt="arrow" ></a>
+            </div>
+
+
+
+            <div class="cart__cards" >
+              <div class="cart__card">
+                <div
+                  class="cart__card-left"
+                  style="background-image: url(assets/images/card-2.png)"
+                >
+                  <div class="cart__card-fav cards__fav fav"></div>
+                </div>
+                <div class="cart__card-right">
+                  <div class="cart__card-top">
+                    <div class="cart__card-title">
+                      <p>Набор из полевых цветов (15 шт)</p>
+                      <button class="cart__card-remove"></button>
+                    </div>
+                    <p class="cart__card-subtitle">
+                      Фритиллярия, Ранункулюс, Антуриум, Гортензия (Гидрангия),
+                      Роза, Вибурнум, Тюльпан, Нерине, Спирея, Диантус
+                      гвоздичн...
+                    </p>
+                  </div>
+
+                  <div class="cart__card-bottom">
+                    <div class="cart__card-bottom-left">
+                      <p class="cart__card-price-dis">5 360 ₽</p>
+                      <p class="cart__card-price-active">8 570 ₽</p>
+                    </div>
+
+                    <div class="cart__card-bottom-right">
+                      <div class="cart__card-button cart__card-dec"></div>
+                      <p class="cart__card-number">1</p>
+                      <div class="cart__card-button cart__card-inc"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cart__card">
+                <div
+                  class="cart__card-left"
+                  style="background-image: url(assets/images/card.png)"
+                >
+                  <div class="cart__card-fav cards__fav fav"></div>
+                </div>
+                <div class="cart__card-right">
+                  <div class="cart__card-top">
+                    <div class="cart__card-title">
+                      <p>Набор из полевых цветов (15 шт)</p>
+                      <button class="cart__card-remove"></button>
+                    </div>
+                    <p class="cart__card-subtitle">
+                      Фритиллярия, Ранункулюс, Антуриум, Гортензия (Гидрангия),
+                      Роза, Вибурнум, Тюльпан, Нерине, Спирея, Диантус
+                      гвоздичн...
+                    </p>
+                  </div>
+
+                  <div class="cart__card-bottom">
+                    <div class="cart__card-bottom-left">
+                      <p class="cart__card-price-dis">5 360 ₽</p>
+                      <p class="cart__card-price-active">8 570 ₽</p>
+                    </div>
+
+                    <div class="cart__card-bottom-right">
+                      <div class="cart__card-button cart__card-dec"></div>
+                      <p class="cart__card-number">1</p>
+                      <div class="cart__card-button cart__card-inc"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cart__card">
+                <div
+                  class="cart__card-left"
+                  style="background-image: url(assets/images/card-2.png)"
+                >
+                  <div class="cart__card-fav cards__fav fav"></div>
+                </div>
+                <div class="cart__card-right">
+                  <div class="cart__card-top">
+                    <div class="cart__card-title">
+                      <p>Набор из полевых цветов (15 шт)</p>
+                      <button class="cart__card-remove"></button>
+                    </div>
+                    <p class="cart__card-subtitle">
+                      Фритиллярия, Ранункулюс, Антуриум, Гортензия (Гидрангия),
+                      Роза, Вибурнум, Тюльпан, Нерине, Спирея, Диантус
+                      гвоздичн...
+                    </p>
+                  </div>
+
+                  <div class="cart__card-bottom">
+                    <div class="cart__card-bottom-left">
+                      <p class="cart__card-price-dis">5 360 ₽</p>
+                      <p class="cart__card-price-active">8 570 ₽</p>
+                    </div>
+
+                    <div class="cart__card-bottom-right">
+                      <div class="cart__card-button cart__card-dec"></div>
+                      <p class="cart__card-number">1</p>
+                      <div class="cart__card-button cart__card-inc"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cart__card">
+                <div
+                  class="cart__card-left"
+                  style="background-image: url(assets/images/card.png)"
+                >
+                  <div class="cart__card-fav cards__fav fav"></div>
+                </div>
+                <div class="cart__card-right">
+                  <div class="cart__card-top">
+                    <div class="cart__card-title">
+                      <p>Набор из полевых цветов (15 шт)</p>
+                      <button class="cart__card-remove"></button>
+                    </div>
+                    <p class="cart__card-subtitle">
+                      Фритиллярия, Ранункулюс, Антуриум, Гортензия (Гидрангия),
+                      Роза, Вибурнум, Тюльпан, Нерине, Спирея, Диантус
+                      гвоздичн...
+                    </p>
+                  </div>
+
+                  <div class="cart__card-bottom">
+                    <div class="cart__card-bottom-left">
+                      <p class="cart__card-price-dis">5 360 ₽</p>
+                      <p class="cart__card-price-active">8 570 ₽</p>
+                    </div>
+
+                    <div class="cart__card-bottom-right">
+                      <div class="cart__card-button cart__card-dec"></div>
+                      <p class="cart__card-number">1</p>
+                      <div class="cart__card-button cart__card-inc"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cart__footer" >
+              <div class="cart__footer-top">
+                <div class="cart__footer-top-btn">
+                  <input
+                    type="text"
+                    class="cart-oninput"
+                    placeholder="Введите промокод"
+                  />
+                  <div class="cart__footer-top-push">
+                    <img
+                      src="assets/images/icons/arrow-right.svg"
+                      alt="arrow"
+                    />
+                  </div>
+
+                  <div class="cart__footer-top-check hidden">
+                    <img
+                      src="assets/images/icons/check-green.svg"
+                      alt="arrow"
+                    />
+                  </div>
+                </div>
+
+                <div class="cart__footer-top-btn">
+                  <p>Итого:</p>
+                  <p>18 360 ₽</p>
+                </div>
+              </div>
+              <a href="#" class="cart__footer-bottom">Оформить заказ</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalog-mobile" data-modal="catalog-mobile">
+          <div class="catalog-mobile__wrapper">
+            <div class="catalog-mobile__nav">
+              <div class="catalog-mobile__item">
+                <p class="catalog-mobile__item-title">Популярное</p>
+                <img
+                  src="assets/images/icons/arrow-right-2.svg"
+                  class="catalog-mobile__item-icon"
+                  alt="arrow"
+                />
+              </div>
+              <div class="catalog-mobile__item">
+                <p class="catalog-mobile__item-title">Для нее</p>
+                <img
+                  src="assets/images/icons/arrow-right-2.svg"
+                  class="catalog-mobile__item-icon"
+                  alt="arrow"
+                />
+              </div>
+              <div class="catalog-mobile__item">
+                <p class="catalog-mobile__item-title">Для него</p>
+                <img
+                  src="assets/images/icons/arrow-right-2.svg"
+                  class="catalog-mobile__item-icon"
+                  alt="arrow"
+                />
+              </div>
+              <div class="catalog-mobile__item">
+                <p class="catalog-mobile__item-title">В интерьер</p>
+                <img
+                  src="assets/images/icons/arrow-right-2.svg"
+                  class="catalog-mobile__item-icon"
+                  alt="arrow"
+                />
+              </div>
+            </div>
+
+            <div class="catalog-mobile__cards">
+              <div
+                class="catalog-mobile__card"
+                style="background-image: url(assets/images/drop-card.png)"
+              >
+                <div class="catalog-mobile__card-footer">
+                  <p class="catalog-mobile__card-title">Акции</p>
+                </div>
+              </div>
+              <div
+                class="catalog-mobile__card"
+                style="background-image: url(assets/images/drop-card.png)"
+              >
+                <div class="catalog-mobile__card-footer">
+                  <p class="catalog-mobile__card-title">Акции</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-mobile">
+          <div class="menu-mobile__wrapper">
+            <div class="menu-mobile__drop">
+              <div class="menu-mobile__drop-wrapper">
+                <p class="menu-mobile__drop-title">Махачкала</p>
+                <img src="assets/images/icons/drop-bottom.svg" class="menu-mobile__drop-icon" alt="arrow" >
+              </div>
+            </div>
+            <div class="menu-mobile__nav">
+              <a href="#" class="menu-mobile__link">О нас</a>
+              <a href="#" class="menu-mobile__link">Доставка</a>
+              <a href="#" class="menu-mobile__link">Оплата</a>
+              <a href="#" class="menu-mobile__link">Условия приема заказа</a>
+              <a href="#" class="menu-mobile__link">Программа лояльности</a>
+              <a href="#" class="menu-mobile__link">Как хранить цветы</a>
+              <a href="#" class="menu-mobile__link">Возврат</a>
+            </div>
+            <div class="menu-mobile__contacts">
+              <a href="#" class="menu-mobile__contact">
+                <img src="assets/images/icons/instagram.svg" alt="instagram" >
+                <p>madetolove</p>
+              </a>
+              <a href="#" class="menu-mobile__contact">
+                <img src="assets/images/icons/phone.svg" alt="telephone" >
+                <p>+7 (966) 004-22-29</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="menu-mobile__menu">
+            <div class="menu-mobile__menu-cities">
+              <div class="menu-mobile__menu-close"></div>
+              <div class="menu-mobile__menu-title">Выберите город</div>
+              <div class="menu-mobile__menu-links">
+                <a href="#" class="menu-mobile__menu-link">
+                  <div class="menu-mobile__menu-radio">
+                    <span></span>
+                  </div>
+
+                  <p>Москва</p>
+                </a>
+                <a href="#" class="menu-mobile__menu-link menu-mobile__menu-link_active">
+                  <div class="menu-mobile__menu-radio">
+                    <span></span>
+                  </div>
+                  
+                  <p>Махачкала</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dropdown-wrapper" data-dropdown="catalog">
+          <div class="dropdown">
+            <div class="dropdown__group">
+              <p class="dropdown__title">В интерьер</p>
+              <div class="dropdown__links">
+                <a href="#" class="dropdown__link"
+                  >Дорожки из цветов
+                  <img
+                    src="assets/images/icons/arrow-hover-right.svg"
+                    alt="arrow"
+                /></a>
+                <a href="#" class="dropdown__link"
+                  >Корзины цветов
+                  <img
+                    src="assets/images/icons/arrow-hover-right.svg"
+                    alt="arrow"
+                /></a>
+                <a href="#" class="dropdown__link"
+                  >Авторские наборы
+                  <img
+                    src="assets/images/icons/arrow-hover-right.svg"
+                    alt="arrow"
+                /></a>
+              </div>
+            </div>
+            <div class="dropdown__group">
+              <p class="dropdown__title">Для него</p>
+              <div class="dropdown__links">
+                <a href="#" class="dropdown__link"
+                  >Мужские букеты
+                  <img
+                    src="assets/images/icons/arrow-hover-right.svg"
+                    alt="arrow"
+                /></a>
+                <a href="#" class="dropdown__link"
+                  >На праздник
+                  <img
+                    src="assets/images/icons/arrow-hover-right.svg"
+                    alt="arrow"
+                /></a>
+                <a href="#" class="dropdown__link"
+                  >Для смокинга
+                  <img
+                    src="assets/images/icons/arrow-hover-right.svg"
+                    alt="arrow"
+                /></a>
+              </div>
+            </div>
+            <div class="dropdown__group">
+              <p class="dropdown__title">Для нее</p>
+              <div class="dropdown__links">
+                <a href="#" class="dropdown__link"
+                  >Женские букеты
+                  <img
+                    src="assets/images/icons/arrow-hover-right.svg"
+                    alt="arrow"
+                /></a>
+                <a href="#" class="dropdown__link"
+                  >101 Набор
+                  <img
+                    src="assets/images/icons/arrow-hover-right.svg"
+                    alt="arrow"
+                /></a>
+                <a href="#" class="dropdown__link"
+                  >На праздник
+                  <img
+                    src="assets/images/icons/arrow-hover-right.svg"
+                    alt="arrow"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown">
+            <div class="dropdown__group">
+              <p class="dropdown__title">Популярное</p>
+              <div class="dropdown__links">
+                <a href="#" class="dropdown__link"
+                  >Коллекция Simple
+                  <img
+                    src="assets/images/icons/arrow-hover-right.svg"
+                    alt="arrow"
+                /></a>
+                <a href="#" class="dropdown__link"
+                  >Бестселлеры
+                  <img
+                    src="assets/images/icons/arrow-hover-right.svg"
+                    alt="arrow"
+                /></a>
+                <a href="#" class="dropdown__link"
+                  >Коробки с цветами
+                  <img
+                    src="assets/images/icons/arrow-hover-right.svg"
+                    alt="arrow"
+                /></a>
+                <a href="#" class="dropdown__link"
+                  >Огромные букеты
+                  <img
+                    src="assets/images/icons/arrow-hover-right.svg"
+                    alt="arrow"
+                /></a>
+                <a href="#" class="dropdown__link"
+                  >Вдохновение брендом
+                  <img
+                    src="assets/images/icons/arrow-hover-right.svg"
+                    alt="arrow"
+                /></a>
+                <a href="#" class="dropdown__link"
+                  >По поводу
+                  <img
+                    src="assets/images/icons/arrow-hover-right.svg"
+                    alt="arrow"
+                /></a>
+                <a href="#" class="dropdown__link"
+                  >Event
+                  <img
+                    src="assets/images/icons/arrow-hover-right.svg"
+                    alt="arrow"
+                /></a>
+                <a href="#" class="dropdown__link"
+                  >Монобукеты
+                  <img
+                    src="assets/images/icons/arrow-hover-right.svg"
+                    alt="arrow"
+                /></a>
+                <a href="#" class="dropdown__link"
+                  >Авторские букеты
+                  <img
+                    src="assets/images/icons/arrow-hover-right.svg"
+                    alt="arrow"
+                /></a>
+                <a href="#" class="dropdown__link"
+                  >Комната цветов
+                  <img
+                    src="assets/images/icons/arrow-hover-right.svg"
+                    alt="arrow"
+                /></a>
+                <a href="#" class="dropdown__link"
+                  >Детские букеты
+                  <img
+                    src="assets/images/icons/arrow-hover-right.svg"
+                    alt="arrow"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown-card">
+            <a href="#">
+              <div
+                class="dropdown-card__bg"
+                style="background-image: url(assets/images/drop-card.png)"
+              >
+                <div class="dropdown-card__hover">
+                  <p class="dropdown-card__title">Подарки</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="dropdown-card">
+            <a href="#">
+              <div
+                class="dropdown-card__bg"
+                style="background-image: url(assets/images/drop-card.png)"
+              >
+                <div class="dropdown-card__hover">
+                  <p class="dropdown-card__title">Подарки</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="catalog-mobile-links">
+          <div class="catalog-mobile-links__header">
+            <div class="catalog-mobile-links__header-arrow">
+              <img src="assets/images/icons/arrow-left.svg" alt="arrow">
+            </div>
+            <a href="/#" class="catalog-mobile-links__header-logo">
+              <img src="assets/images/logo.svg" alt="arrow">
+            </a>
+            <div class="catalog-mobile-links__header-search">
+              <img src="assets/images/icons/search.svg" alt="search">
+            </div>
+          </div>
+          <div class="catalog-mobile-links__links">
+            <div class="catalog-mobile__link">
+              <p>Коллекция Simple</p>
+              <img src="assets/images/icons/arrow-right-2.svg" alt="arrow" >
+            </div>
+            <div class="catalog-mobile__link">
+              <p>Бестселлеры</p>
+              <img src="assets/images/icons/arrow-right-2.svg" alt="arrow" >
+            </div>
+            <div class="catalog-mobile__link">
+              <p>Коробки с цветами</p>
+              <img src="assets/images/icons/arrow-right-2.svg" alt="arrow" >
+            </div>
+            <div class="catalog-mobile__link">
+              <p>Огромные букеты</p>
+              <img src="assets/images/icons/arrow-right-2.svg" alt="arrow" >
+            </div>
+            <div class="catalog-mobile__link">
+              <p>Вдохновение брендом</p>
+              <img src="assets/images/icons/arrow-right-2.svg" alt="arrow" >
+            </div>
+            <div class="catalog-mobile__link">
+              <p>По поводу</p>
+              <img src="assets/images/icons/arrow-right-2.svg" alt="arrow" >
+            </div>
+            <div class="catalog-mobile__link">
+              <p>Монобукеты</p>
+              <img src="assets/images/icons/arrow-right-2.svg" alt="arrow" >
+            </div>
+            <div class="catalog-mobile__link">
+              <p>Авторские букеты</p>
+              <img src="assets/images/icons/arrow-right-2.svg" alt="arrow" >
+            </div>
+            <div class="catalog-mobile__link">
+              <p>Event</p>
+              <img src="assets/images/icons/arrow-right-2.svg" alt="arrow" >
+            </div>
+            <div class="catalog-mobile__link">
+              <p>Комната цветов</p>
+              <img src="assets/images/icons/arrow-right-2.svg" alt="arrow" >
+            </div>
+            <div class="catalog-mobile__link">
+              <p>Детские букеты</p>
+              <img src="assets/images/icons/arrow-right-2.svg" alt="arrow" >
+            </div>
+          </div>
+        </div>
+
+        <section class="cards">
+          <div class="cards__card">
+            <div class="cards__card-header">
+              <span class="cards__message">-30%</span>
+
+              <div class="cards__fav fav"></div>
+            </div>
+
+            <div
+              class="cards__content"
+              style="background-image: url(assets/images/card-2.png)"
+            >
+              <a href="#" class="cards__card-link"></a>
+              <div class="cards__content-footer">
+                <h2 class="cards__content-title">Алый цветочек</h2>
+                <div class="cards__content-price">
+                  <p class="cards__content-price-active">990 ₽</p>
+                </div>
+                <div class="cards__content-bottom">
+                  <div class="cards__content-sizes">
+                    <div class="cards__content-size active-size">M</div>
+                    <div class="cards__content-size">L</div>
+                    <div class="cards__content-size">XL</div>
+                  </div>
+
+                  <a href="#" class="cards__content-added">
+                    <img src="assets/images/icons/cart-0.svg" alt="cart" />
+                    <p>Купить</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cards__card">
+            <div class="cards__card-header">
+              <span class="cards__message cards__message-new">Новинка</span>
+              <div class="cards__fav fav"></div>
+            </div>
+
+            <div
+              class="cards__content"
+              style="background-image: url(assets/images/card.png)"
+            >
+              <a href="#" class="cards__card-link"></a>
+              <div class="cards__content-footer">
+                <h2 class="cards__content-title">Алый цветочек</h2>
+                <div class="cards__content-price">
+                  <p class="cards__content-price-active">990 ₽</p>
+                  <p class="cards__content-price-dis">1 220 ₽</p>
+                </div>
+                <div class="cards__content-bottom">
+                  <div class="cards__content-sizes">
+                    <div class="cards__content-size active-size">M</div>
+                    <div class="cards__content-size">L</div>
+                    <div class="cards__content-size">XL</div>
+                    <div class="cards__content-size active-size">M</div>
+                    <div class="cards__content-size">L</div>
+                  </div>
+
+                  <a href="#" class="cards__content-added">
+                    <img src="assets/images/icons/cart-0.svg" alt="cart" />
+                    <p>Купить</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cards__card">
+            <div class="cards__card-header">
+              <span class="cards__message">-30%</span>
+              <div class="cards__fav fav"></div>
+            </div>
+
+            <div
+              class="cards__content"
+              style="background-image: url(assets/images/card-3.png)"
+            >
+              <a href="#" class="cards__card-link"></a>
+              <div class="cards__content-footer">
+                <h2 class="cards__content-title">Алый цветочек</h2>
+                <div class="cards__content-price">
+                  <p class="cards__content-price-active">990 ₽</p>
+                  <p class="cards__content-price-dis">1 220 ₽</p>
+                </div>
+                <div class="cards__content-bottom">
+                  <div class="cards__content-sizes">
+                    <div class="cards__content-size active-size">M</div>
+                    <div class="cards__content-size">L</div>
+                    <div class="cards__content-size">XL</div>
+                  </div>
+
+                  <a href="#" class="cards__content-added">
+                    <img src="assets/images/icons/cart-0.svg" alt="cart" />
+                    <p>Купить</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cards__card">
+            <div class="cards__card-header">
+              <span class="cards__message">-30%</span>
+              <div class="cards__fav fav"></div>
+            </div>
+
+            <div
+              class="cards__content"
+              style="background-image: url(assets/images/card.png)"
+            >
+              <a href="#" class="cards__card-link"></a>
+              <div class="cards__content-footer">
+                <h2 class="cards__content-title">Алый цветочек</h2>
+                <div class="cards__content-price">
+                  <p class="cards__content-price-active">990 ₽</p>
+                  <p class="cards__content-price-dis">1 220 ₽</p>
+                </div>
+                <div class="cards__content-bottom">
+                  <div class="cards__content-sizes">
+                    <div class="cards__content-size active-size">M</div>
+                    <div class="cards__content-size">L</div>
+                    <div class="cards__content-size">XL</div>
+                  </div>
+
+                  <a href="#" class="cards__content-added">
+                    <img src="assets/images/icons/check.svg" alt="cart" />
+                    <p>В корзине</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cards__card">
+            <div class="cards__card-header">
+              <span class="cards__message">-30%</span>
+              <div class="cards__fav fav"></div>
+            </div>
+
+            <div
+              class="cards__content"
+              style="background-image: url(assets/images/card-2.png)"
+            >
+              <a href="#" class="cards__card-link"></a>
+              <div class="cards__content-footer">
+                <h2 class="cards__content-title">Алый цветочек</h2>
+                <div class="cards__content-price">
+                  <p class="cards__content-price-active">990 ₽</p>
+                </div>
+                <div class="cards__content-bottom">
+                  <div class="cards__content-sizes">
+                    <div class="cards__content-size active-size">M</div>
+                    <div class="cards__content-size">L</div>
+                    <div class="cards__content-size">XL</div>
+                  </div>
+
+                  <a href="#" class="cards__content-added">
+                    <img src="assets/images/icons/cart-0.svg" alt="cart" />
+                    <p>Купить</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cards__card">
+            <div class="cards__card-header">
+              <span class="cards__message cards__message-new">Новинка</span>
+              <div class="cards__fav fav"></div>
+            </div>
+
+            <div
+              class="cards__content"
+              style="background-image: url(assets/images/card.png)"
+            >
+              <a href="#" class="cards__card-link"></a>
+              <div class="cards__content-footer">
+                <h2 class="cards__content-title">Алый цветочек</h2>
+                <div class="cards__content-price">
+                  <p class="cards__content-price-active">990 ₽</p>
+                  <p class="cards__content-price-dis">1 220 ₽</p>
+                </div>
+                <div class="cards__content-bottom">
+                  <div class="cards__content-sizes">
+                    <div class="cards__content-size active-size">M</div>
+                    <div class="cards__content-size">L</div>
+                    <div class="cards__content-size">XL</div>
+                  </div>
+
+                  <a href="#" class="cards__content-added">
+                    <img src="assets/images/icons/cart-0.svg" alt="cart" />
+                    <p>Купить</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cards__card">
+            <div class="cards__card-header">
+              <span class="cards__message">-30%</span>
+              <div class="cards__fav fav"></div>
+            </div>
+
+            <div
+              class="cards__content"
+              style="background-image: url(assets/images/card-3.png)"
+            >
+              <a href="#" class="cards__card-link"></a>
+              <div class="cards__content-footer">
+                <h2 class="cards__content-title">Алый цветочек</h2>
+                <div class="cards__content-price">
+                  <p class="cards__content-price-active">990 ₽</p>
+                  <p class="cards__content-price-dis">1 220 ₽</p>
+                </div>
+                <div class="cards__content-bottom">
+                  <div class="cards__content-sizes">
+                    <div class="cards__content-size active-size">M</div>
+                    <div class="cards__content-size">L</div>
+                    <div class="cards__content-size">XL</div>
+                  </div>
+
+                  <a href="#" class="cards__content-added">
+                    <img src="assets/images/icons/cart-0.svg" alt="cart" />
+                    <p>Купить</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cards__card">
+            <div class="cards__card-header">
+              <span class="cards__message">-30%</span>
+              <div class="cards__fav fav"></div>
+            </div>
+
+            <div
+              class="cards__content"
+              style="background-image: url(assets/images/card.png)"
+            >
+              <a href="#" class="cards__card-link"></a>
+              <div class="cards__content-footer">
+                <h2 class="cards__content-title">Алый цветочек</h2>
+                <div class="cards__content-price">
+                  <p class="cards__content-price-active">990 ₽</p>
+                  <p class="cards__content-price-dis">1 220 ₽</p>
+                </div>
+                <div class="cards__content-bottom">
+                  <div class="cards__content-sizes">
+                    <div class="cards__content-size active-size">M</div>
+                    <div class="cards__content-size">L</div>
+                    <div class="cards__content-size">XL</div>
+                  </div>
+
+                  <a href="#" class="cards__content-added">
+                    <img src="assets/images/icons/check.svg" alt="cart" />
+                    <p>В корзине</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cards__card">
+            <div class="cards__card-header">
+              <span class="cards__message">-30%</span>
+              <div class="cards__fav fav"></div>
+            </div>
+
+            <div
+              class="cards__content"
+              style="background-image: url(assets/images/card-3.png)"
+            >
+              <a href="#" class="cards__card-link"></a>
+              <div class="cards__content-footer">
+                <h2 class="cards__content-title">Алый цветочек</h2>
+                <div class="cards__content-price">
+                  <p class="cards__content-price-active">990 ₽</p>
+                  <p class="cards__content-price-dis">1 220 ₽</p>
+                </div>
+                <div class="cards__content-bottom">
+                  <div class="cards__content-sizes">
+                    <div class="cards__content-size active-size">M</div>
+                    <div class="cards__content-size">L</div>
+                    <div class="cards__content-size">XL</div>
+                  </div>
+
+                  <a href="#" class="cards__content-added">
+                    <img src="assets/images/icons/cart-0.svg" alt="cart" />
+                    <p>Купить</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cards__card">
+            <div class="cards__card-header">
+              <span class="cards__message">-30%</span>
+              <div class="cards__fav fav"></div>
+            </div>
+
+            <div
+              class="cards__content"
+              style="background-image: url(assets/images/card.png)"
+            >
+              <a href="#" class="cards__card-link"></a>
+              <div class="cards__content-footer">
+                <h2 class="cards__content-title">Алый цветочек</h2>
+                <div class="cards__content-price">
+                  <p class="cards__content-price-active">990 ₽</p>
+                  <p class="cards__content-price-dis">1 220 ₽</p>
+                </div>
+                <div class="cards__content-bottom">
+                  <div class="cards__content-sizes">
+                    <div class="cards__content-size active-size">M</div>
+                    <div class="cards__content-size">L</div>
+                    <div class="cards__content-size">XL</div>
+                  </div>
+
+                  <a href="#" class="cards__content-added">
+                    <img src="assets/images/icons/check.svg" alt="cart" />
+                    <p>В корзине</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="advise advise-b-bottom">
+          <a href="#" class="advise__title">
+            <p>Советуем</p>
+            <img src="assets/images/icons/arrow-right.svg" alt="arrow-right" />
+          </a>
+        </div>
+
+        <section class="cards-two">
+          <a href="#" class="cards-two__card">
+            <div
+              class="cards-two__card-img"
+              style="background-image: url(assets/images/card-two.png)"
+            ></div>
+            <div class="cards-two__footer">
+              <h2 class="cards-two__title">
+                Монобукеты монобукеты монобукеты монобукеты монобукеты
+                монобукеты
+              </h2>
+              <p class="cards-two__price">от 2 500 ₽</p>
+            </div>
+          </a>
+
+          <a href="#" class="cards-two__card">
+            <div
+              class="cards-two__card-img"
+              style="background-image: url(assets/images/card-two.png)"
+            ></div>
+            <div class="cards-two__footer">
+              <h2 class="cards-two__title">Монобукеты</h2>
+              <p class="cards-two__price">от 2 500 ₽</p>
+            </div>
+          </a>
+          <a href="#" class="cards-two__card">
+            <div
+              class="cards-two__card-img"
+              style="background-image: url(assets/images/card-two.png)"
+            ></div>
+            <div class="cards-two__footer">
+              <h2 class="cards-two__title">Монобукеты</h2>
+              <p class="cards-two__price">от 2 500 ₽</p>
+            </div>
+          </a>
+          <a href="#" class="cards-two__card">
+            <div
+              class="cards-two__card-img"
+              style="background-image: url(assets/images/card-two.png)"
+            ></div>
+            <div class="cards-two__footer">
+              <h2 class="cards-two__title">Монобукеты</h2>
+              <p class="cards-two__price">от 2 500 ₽</p>
+            </div>
+          </a>
+          <a href="#" class="cards-two__card">
+            <div
+              class="cards-two__card-img"
+              style="background-image: url(assets/images/card-two.png)"
+            ></div>
+            <div class="cards-two__footer">
+              <h2 class="cards-two__title">Монобукеты</h2>
+              <p class="cards-two__price">от 2 500 ₽</p>
+            </div>
+          </a>
+          <a href="#" class="cards-two__card">
+            <div
+              class="cards-two__card-img"
+              style="background-image: url(assets/images/card-two.png)"
+            ></div>
+            <div class="cards-two__footer">
+              <h2 class="cards-two__title">Монобукеты</h2>
+              <p class="cards-two__price">от 2 500 ₽</p>
+            </div>
+          </a>
+          <a href="#" class="cards-two__card">
+            <div
+              class="cards-two__card-img"
+              style="background-image: url(assets/images/card-two.png)"
+            ></div>
+            <div class="cards-two__footer">
+              <h2 class="cards-two__title">Монобукеты</h2>
+              <p class="cards-two__price">от 2 500 ₽</p>
+            </div>
+          </a>
+        </section>
+
+        <div class="advise advise-cards-two">
+          <a href="#" class="advise__title">
+            <p>Популярные подборки</p>
+            <img src="assets/images/icons/arrow-right.svg" alt="arrow-right" />
+          </a>
+        </div>
+
+        <div class="bottom-menu">
+          <div class="bottom-menu__wrapper">
+            <div class="bottom-menu__icons">
+              <a
+                href="/#"
+                class="
+                  bottom-menu__icon
+                  bottom-menu__icon-home
+                  bottom-menu__icon-active
+                "
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3.5 9.63732C3.5 9.32973 3.64156 9.03925 3.88382 8.84972L11.3838 2.98207C11.7458 2.69888 12.2542 2.69888 12.6162 2.98207L20.1162 8.84972C20.3584 9.03925 20.5 9.32973 20.5 9.63732V19.6C20.5 20.1039 20.301 20.5872 19.9468 20.9435C19.5925 21.2998 19.1121 21.5 18.6111 21.5H5.38889C4.88792 21.5 4.40748 21.2998 4.05324 20.9435C3.69901 20.5872 3.5 20.1039 3.5 19.6V9.63732Z"
+                    stroke="#818181"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+              <div class="bottom-menu__icon" data-open-modal="catalog-mobile">
+                <svg
+                  width="24"
+                  height="18"
+                  viewBox="0 0 24 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M18.9685 3.36413C16.5332 0.878622 12.5891 0.878622 10.1538 3.36413C7.71294 5.85534 7.71294 9.89852 10.1538 12.3897C12.5891 14.8752 16.5332 14.8752 18.9685 12.3897C21.4094 9.89852 21.4094 5.85534 18.9685 3.36413ZM9.43954 2.66428C12.267 -0.221426 16.8554 -0.221426 19.6828 2.66428C22.3894 5.42669 22.5 9.83156 20.0144 12.7281L23.8571 16.6501C24.0504 16.8473 24.0472 17.1639 23.8499 17.3571C23.6527 17.5504 23.3361 17.5472 23.1429 17.3499L19.3134 13.4416C16.4689 15.9701 12.1469 15.8528 9.43954 13.0896C6.6177 10.2096 6.6177 5.54429 9.43954 2.66428ZM0 3.39427C0 3.11813 0.223858 2.89427 0.5 2.89427H6.01062C6.28677 2.89427 6.51062 3.11813 6.51062 3.39427C6.51062 3.67042 6.28677 3.89427 6.01062 3.89427H0.5C0.223858 3.89427 0 3.67042 0 3.39427ZM0 7.89427C0 7.61813 0.223858 7.39427 0.5 7.39427H5.00869C5.28484 7.39427 5.50869 7.61813 5.50869 7.89427C5.50869 8.17041 5.28484 8.39427 5.00869 8.39427H0.5C0.223858 8.39427 0 8.17041 0 7.89427ZM0 12.3943C0 12.1181 0.223858 11.8943 0.5 11.8943H6.01062C6.28677 11.8943 6.51062 12.1181 6.51062 12.3943C6.51062 12.6704 6.28677 12.8943 6.01062 12.8943H0.5C0.223858 12.8943 0 12.6704 0 12.3943Z"
+                    fill="#818181"
+                  />
+                </svg>
+              </div>
+              <div class="bottom-menu__icon" data-open-modal="cart">
+                <svg
+                  width="20"
+                  height="24"
+                  viewBox="0 0 20 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M6.82536 5.84093C6.88824 5.24582 7.00854 4.64439 7.20767 4.09859C7.44281 3.4541 7.77678 2.91742 8.22574 2.5507C8.66515 2.19176 9.24655 1.96889 10.0391 1.99795C10.8355 2.02715 11.4129 2.28684 11.8445 2.67061C12.2842 3.06158 12.6011 3.60742 12.8205 4.24631C12.9945 4.75271 13.1013 5.29999 13.1621 5.84093H6.82536ZM5.76982 6.84094C5.76626 7.34796 5.79569 7.82027 5.8436 8.22281C5.87624 8.49702 6.12499 8.69285 6.3992 8.66021C6.67341 8.62757 6.86923 8.37882 6.83659 8.10461C6.7923 7.73251 6.76626 7.30035 6.76981 6.84094L13.2276 6.84093C13.2381 7.31165 13.2212 7.75222 13.1932 8.12642C13.1727 8.4018 13.3792 8.64173 13.6546 8.66232C13.9299 8.68292 14.1699 8.47638 14.1905 8.201C14.2194 7.81442 14.2384 7.34807 14.2279 6.84093H17.6066L18.8678 22.0045H1.13239L2.39365 6.84094H5.76982ZM5.82032 5.84093C5.88725 5.14111 6.02586 4.4202 6.26824 3.75585C6.54327 3.00202 6.96293 2.291 7.59312 1.77623C8.23285 1.25367 9.05612 0.961233 10.0758 0.998619C11.0916 1.03587 11.8945 1.37693 12.509 1.92332C13.1154 2.46252 13.5103 3.17625 13.7663 3.92146C13.9792 4.54142 14.1025 5.20236 14.1678 5.84093H17.6066C18.1267 5.84093 18.56 6.23969 18.6031 6.75804L19.8644 21.9217C19.9129 22.5046 19.4528 23.0045 18.8678 23.0045H1.13239C0.547411 23.0045 0.0873455 22.5046 0.135834 21.9217L1.39709 6.75804C1.44021 6.23969 1.8735 5.84093 2.39365 5.84093H5.82032Z"
+                    fill="#818181"
+                  />
+                </svg>
+              </div>
+              <a href="/favorites.html" class="bottom-menu__icon">
+                <svg
+                  width="22"
+                  height="20"
+                  viewBox="0 0 22 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.4578 2.59133C18.9691 2.08683 18.3889 1.68663 17.7503 1.41358C17.1117 1.14054 16.4272 1 15.7359 1C15.0446 1 14.3601 1.14054 13.7215 1.41358C13.0829 1.68663 12.5026 2.08683 12.0139 2.59133L10.9997 3.63785L9.98554 2.59133C8.99842 1.57276 7.6596 1.00053 6.26361 1.00053C4.86761 1.00053 3.52879 1.57276 2.54168 2.59133C1.55456 3.6099 1 4.99139 1 6.43187C1 7.87235 1.55456 9.25383 2.54168 10.2724L3.55588 11.3189L10.9997 19L18.4436 11.3189L19.4578 10.2724C19.9467 9.76814 20.3346 9.16942 20.5992 8.51045C20.8638 7.85148 21 7.14517 21 6.43187C21 5.71857 20.8638 5.01225 20.5992 4.35328C20.3346 3.69431 19.9467 3.09559 19.4578 2.59133V2.59133Z"
+                    stroke="#818181"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="search" data-modal="search">
+          <div class="search__inp">
+            <div class="search__inp-wrapper">
+              <div class="search__inp-icon search__inp-icon-search">
+                <div class="search__inp-icon-img"></div>
+              </div>
+              <input type="text" placeholder="Что вы хотите найти ?" />
+              <div
+                class="search__inp-icon search__inp-icon-remove"
+                data-close-modal="search"
+              ></div>
+            </div>
+          </div>
+
+          <div class="search__result">
+            <div class="search__result-noresult hidden">
+              <p>По запросу <span>«dfsfbdффыпыы»</span> ничего не найдено</p>
+            </div>
+            <ul class="search__result-results">
+              <li class="search__result-result">
+                <div class="search__result-icon">
+                  <div class="search__result-img"></div>
+                </div>
+                <div class="search__result-text">Платье Armani exchange</div>
+              </li>
+              <li class="search__result-result">
+                <div class="search__result-icon">
+                  <div class="search__result-img"></div>
+                </div>
+                <div class="search__result-text">
+                  <span>Платье</span> перламутровое Easy
+                </div>
+              </li>
+              <li class="search__result-result">
+                <div class="search__result-icon">
+                  <div class="search__result-img"></div>
+                </div>
+                <div class="search__result-text">Платок шелковый DG</div>
+              </li>
+            </ul>
+            <ul class="search__result-results search__result-history hidden">
+              <li class="search__result-result">
+                <div class="search__result-icon">
+                  <div class="search__result-img"></div>
+                </div>
+                <div class="search__result-text">
+                  <p>Платье Armani exchange</p>
+                  <div class="search__result-text-img-wrapper">
+                    <div class="search__result-text-img"></div>
+                  </div>
+                </div>
+              </li>
+              <li class="search__result-result">
+                <div class="search__result-icon">
+                  <div class="search__result-img"></div>
+                </div>
+                <div class="search__result-text">
+                  <p>
+                    Платье Armani шелковое с перламутровым отблеском на
+                    воротнике
+                  </p>
+                  <div class="search__result-text-img-wrapper">
+                    <div class="search__result-text-img"></div>
+                  </div>
+                  
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__block footer__block-desc">
+          <img src="assets/images/logo.svg" class="footer__logo" alt="logo" />
+          <p class="footer__desc">
+            2021 © Madetolove. Все права защищены. Незаконное копирование
+            преследуется по закону.
+          </p>
+        </div>
+        <div class="footer__block">
+          <a class="footer__text" href="#">О нас</a>
+          <a class="footer__text" href="#">Новости</a>
+          <a class="footer__text" href="#">Список вакансий</a>
+          <a class="footer__text" href="#">Контакты</a>
+        </div>
+        <div class="footer__block">
+          <a class="footer__text" href="#">Информация о доставке</a>
+          <a class="footer__text" href="#">Информация об оплате</a>
+          <a class="footer__text" href="#">Возврат товара</a>
+          <a class="footer__text" href="#">Как хранить цветы</a>
+        </div>
+        <div class="footer__block">
+          <a class="footer__text" href="#">Юридическая информация</a>
+          <a class="footer__text" href="#">Публичная оферта</a>
+          <a class="footer__text" href="#">Политика конфеденциальности</a>
+        </div>
+        <div class="footer__block footer__block-mob">
+          <img src="assets/images/logo.svg" class="footer__logo" alt="logo" />
+          <p class="footer__desc">
+            2021 © Madetolove. Все права защищены. Незаконное копирование
+            преследуется <br />
+            по закону.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/libs/hammer/hammer.js"></script>
+    <script src="assets/js/dropdown.js"></script>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/modal.js"></script>
+    <script src="assets/js/cart.js"></script>
+    <script src="assets/js/favorites.js"></script>
+    <script src="assets/js/bottom-menu.js"></script>
+    <script src="assets/js/catalog-mobile.js"></script>
+  </body>
+</html>

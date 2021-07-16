@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Madetolove - Главная</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="favicon.png" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__desktop">
+        <div class="header__section header__1">
+          <a href="/" class="header__section-50 header__logo-wrapper">
+            <img src="assets/images/logo.svg" alt="logo" class="header__logo" />
+          </a>
+
+          <a href="#" class="header__section-50 header__nav-link">
+            <p>О нас</p>
+            <img src="assets/images/icons/arrow-bottom.svg" alt="icon" />
+          </a>
+        </div>
+
+        <div class="header__section header__2">
+          <div
+            class="header__section-50 header__nav-link"
+            data-open-dropdown="catalog"
+          >
+            <p>Каталог</p>
+            <img src="assets/images/icons/arrow-bottom.svg" alt="icon" />
+          </div>
+          <div
+            data-open-dropdown="city"
+            class="header__section-50 header__nav-link"
+          >
+            <p>Махачкала</p>
+            <img src="assets/images/icons/arrow-bottom.svg" alt="icon" />
+          </div>
+        </div>
+
+        <div class="header__section header__3">
+          <a href="tel:+79660042229" class="header__section-100 header__tel">
+            <img src="assets/images/icons/tel.svg" alt="Telephone" />
+            <p>+7 (966) 004-22-29</p>
+          </a>
+        </div>
+
+        <div class="header__section header__4">
+          <div class="header__section-50">
+            <a href="#" class="header__icon">
+              <img src="assets/images/icons/instagram.svg" alt="instagram" />
+            </a>
+            <a href="#" class="header__icon">
+              <img src="assets/images/icons/search.svg" alt="search" />
+            </a>
+          </div>
+
+          <div class="header__section-50">
+            <a href="#" class="header__icon">
+              <img src="assets/images/icons/heart.svg" alt="heart" />
+            </a>
+            <div class="header__icon header__icon-cart" data-open-modal="cart">
+              <img src="assets/images/icons/cart.svg" alt="cart" />
+              <p class="header__icon-length">13</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__mobile">
+        <div class="header__mobile-container">
+          <div class="header__mobile-block">
+            <div class="header__mobile-icon open-menu">
+              <img src="assets/images/icons/menu.svg" alt="menu" />
+            </div>
+            <a href="#" class="header__mobile-icon">
+              <img src="assets/images/icons/search.svg" alt="menu" />
+            </a>
+          </div>
+          <div class="header__mobile-block">
+            <a href="#" class="header__mobile-icon">
+              <img src="assets/images/icons/heart.svg" class="favorites-icon" alt="menu" />
+            </a>
+            <a href="#" class="header__mobile-icon">
+              <img src="assets/images/icons/cart-0.svg" alt="menu" />
+            </a>
+          </div>
+        </div>
+        <nav class="header__mobile-nav">
+          <a href="#" class="header__mobile-link">
+            <p>О нас</p>
+            <img src="assets/images/icons/arrow-bottom.svg" alt="arrow" />
+          </a>
+
+          <div
+            href="#"
+            class="header__mobile-link"
+            data-open-dropdown="catalog-mobile"
+          >
+            <p>Каталог</p>
+            <img src="assets/images/icons/arrow-bottom.svg" alt="arrow" />
+          </div>
+
+          <ul class="header__mobile-drop" data-dropdown="catalog-mobile">
+            <li><a href="#">Дорожки из цветов</a></li>
+            <li><a href="#">Корзины цветов</a></li>
+            <li><a href="#">Авторские наборы</a></li>
+            <li><a href="#">Мужские букеты</a></li>
+            <li><a href="#">На праздник</a></li>
+            <li><a href="#">Для смокинга</a></li>
+            <li><a href="#">Женские букеты</a></li>
+            <li><a href="#">101 Набор</a></li>
+            <li><a href="#">На праздник</a></li>
+            <li><a href="#">Коллекция Simple</a></li>
+            <li><a href="#">Бестселлеры</a></li>
+            <li><a href="#">Коробки с цветами</a></li>
+            <li><a href="#">Огромные букеты</a></li>
+            <li><a href="#">Вдохновение брендом</a></li>
+            <li><a href="#">По поводу</a></li>
+            <li><a href="#">Event</a></li>
+            <li><a href="#">Монобукеты</a></li>
+            <li><a href="#">Авторские букеты</a></li>
+            <li><a href="#">Комната цветов</a></li>
+            <li><a href="#">Детские букеты</a></li>
+          </ul>
+
+          <div data-open-dropdown="city-mobile" class="header__mobile-link">
+            <p>Махачкала</p>
+            <img src="assets/images/icons/arrow-bottom.svg" alt="arrow" />
+          </div>
+
+          <ul class="header__mobile-drop" data-dropdown="city-mobile">
+            <li><a href="#">Махачкала</a></li>
+            <li><a href="#">Каспийск</a></li>
+            <li><a href="#">Дербент</a></li>
+            <li><a href="#">Хасавюрт</a></li>
+            <li><a href="#">Кизилюрт</a></li>
+            <li><a href="#">Кизляр</a></li>
+            <li><a href="#">Грозный</a></li>
+            <li><a href="#">Москва</a></li>
+            <li><a href="#">Махачкала</a></li>
+            <li><a href="#">Каспийск</a></li>
+            <li><a href="#">Дербент</a></li>
+            <li><a href="#">Хасавюрт</a></li>
+            <li><a href="#">Кизилюрт</a></li>
+            <li><a href="#">Кизляр</a></li>
+            <li><a href="#">Грозный</a></li>
+            <li><a href="#">Москва</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        
+        <div class="modal cart" data-modal="cart">
+          <div class="modal__filter"></div>
+          <div class="cart__content modal__content">
+            <div class="cart__header">
+              <div class="cart__header-title">Ваш заказ</div>
+              <div class="cart__header-btns">
+                <!-- Кнопка отображается только если в корзине есть товары -->
+                <button class="cart__header-clear" >Очистить список</button>
+                <button
+                  class="cart__header-close"
+                  data-close-modal="cart"
+                ></button>
+              </div>
+            </div>
+
+            <!-- Если нету товаров то показываем этот текст -->
+            <p class="cart__none-content" style="display: none;">Список ваших покупок пуст</p>
+
+            <div class="cart__cards">
+              <div class="cart__card">
+                <div
+                  class="cart__card-left"
+                  style="background-image: url(assets/images/card-2.png)"
+                >
+                  
+                  <div class="cart__card-fav cards__fav fav"></div>
+                </div>
+                <div class="cart__card-right">
+                  <div class="cart__card-top">
+                    <div class="cart__card-title">
+                      <p>Набор из полевых цветов (15 шт)</p>
+                      <button class="cart__card-remove"></button>
+                    </div>
+                    <p class="cart__card-subtitle">
+                      Фритиллярия, Ранункулюс, Антуриум, Гортензия (Гидрангия),
+                      Роза, Вибурнум, Тюльпан, Нерине, Спирея, Диантус
+                      гвоздичн...
+                    </p>
+                  </div>
+
+                  <div class="cart__card-bottom">
+                    <div class="cart__card-bottom-left">
+                      <p class="cart__card-price-dis">5 360 ₽</p>
+                      <p class="cart__card-price-active">8 570 ₽</p>
+                    </div>
+
+                    <div class="cart__card-bottom-right">
+                      <div class="cart__card-button cart__card-dec"></div>
+                      <p class="cart__card-number">1</p>
+                      <div class="cart__card-button cart__card-inc"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cart__card">
+                <div
+                  class="cart__card-left"
+                  style="background-image: url(assets/images/card.png)"
+                >
+                <div class="cart__card-fav cards__fav fav"></div>
+                </div>
+                <div class="cart__card-right">
+                  <div class="cart__card-top">
+                    <div class="cart__card-title">
+                      <p>Набор из полевых цветов (15 шт)</p>
+                      <button class="cart__card-remove"></button>
+                    </div>
+                    <p class="cart__card-subtitle">
+                      Фритиллярия, Ранункулюс, Антуриум, Гортензия (Гидрангия),
+                      Роза, Вибурнум, Тюльпан, Нерине, Спирея, Диантус
+                      гвоздичн...
+                    </p>
+                  </div>
+
+                  <div class="cart__card-bottom">
+                    <div class="cart__card-bottom-left">
+                      <p class="cart__card-price-dis">5 360 ₽</p>
+                      <p class="cart__card-price-active">8 570 ₽</p>
+                    </div>
+
+                    <div class="cart__card-bottom-right">
+                      <div class="cart__card-button cart__card-dec"></div>
+                      <p class="cart__card-number">1</p>
+                      <div class="cart__card-button cart__card-inc"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cart__card">
+                <div
+                  class="cart__card-left"
+                  style="background-image: url(assets/images/card-2.png)"
+                >
+                <div class="cart__card-fav cards__fav fav"></div>
+                </div>
+                <div class="cart__card-right">
+                  <div class="cart__card-top">
+                    <div class="cart__card-title">
+                      <p>Набор из полевых цветов (15 шт)</p>
+                      <button class="cart__card-remove"></button>
+                    </div>
+                    <p class="cart__card-subtitle">
+                      Фритиллярия, Ранункулюс, Антуриум, Гортензия (Гидрангия),
+                      Роза, Вибурнум, Тюльпан, Нерине, Спирея, Диантус
+                      гвоздичн...
+                    </p>
+                  </div>
+
+                  <div class="cart__card-bottom">
+                    <div class="cart__card-bottom-left">
+                      <p class="cart__card-price-dis">5 360 ₽</p>
+                      <p class="cart__card-price-active">8 570 ₽</p>
+                    </div>
+
+                    <div class="cart__card-bottom-right">
+                      <div class="cart__card-button cart__card-dec"></div>
+                      <p class="cart__card-number">1</p>
+                      <div class="cart__card-button cart__card-inc"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cart__card">
+                <div
+                  class="cart__card-left"
+                  style="background-image: url(assets/images/card.png)"
+                >
+                <div class="cart__card-fav cards__fav fav"></div>
+                </div>
+                <div class="cart__card-right">
+                  <div class="cart__card-top">
+                    <div class="cart__card-title">
+                      <p>Набор из полевых цветов (15 шт)</p>
+                      <button class="cart__card-remove"></button>
+                    </div>
+                    <p class="cart__card-subtitle">
+                      Фритиллярия, Ранункулюс, Антуриум, Гортензия (Гидрангия),
+                      Роза, Вибурнум, Тюльпан, Нерине, Спирея, Диантус
+                      гвоздичн...
+                    </p>
+                  </div>
+
+                  <div class="cart__card-bottom">
+                    <div class="cart__card-bottom-left">
+                      <p class="cart__card-price-dis">5 360 ₽</p>
+                      <p class="cart__card-price-active">8 570 ₽</p>
+                    </div>
+
+                    <div class="cart__card-bottom-right">
+                      <div class="cart__card-button cart__card-dec"></div>
+                      <p class="cart__card-number">1</p>
+                      <div class="cart__card-button cart__card-inc"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cart__footer">
+              <div class="cart__footer-top">
+                <div class="cart__footer-top-btn">
+                  
+                  <input type="text" class="cart-oninput" placeholder="Введите промокод">
+                  <div class="cart__footer-top-push">
+                    <img src="assets/images/icons/arrow-right.svg" alt="arrow">
+                  </div>
+
+                  <div class="cart__footer-top-check hidden">
+                    <img src="assets/images/icons/check-green.svg" alt="arrow">
+                  </div>
+                  
+                </div>
+
+                
+                <div class="cart__footer-top-btn">
+                  <p>Итого:</p>
+                  <p>18 360 ₽</p>
+                </div>
+              </div>
+              <a href="#" class="cart__footer-bottom">Оформить заказ</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="dropdown-wrapper" data-dropdown="catalog">
+          <div class="dropdown">
+            <div class="dropdown__group">
+              <p class="dropdown__title">В интерьер</p>
+              <div class="dropdown__links">
+                <a href="#" class="dropdown__link"
+                  >Дорожки из цветов
+                  <img
+                    src="assets/images/icons/arrow-hover-right.svg"
+                    alt="arrow"
+                /></a>
+                <a href="#" class="dropdown__link"
+                  >Корзины цветов
+                  <img
+                    src="assets/images/icons/arrow-hover-right.svg"
+                    alt="arrow"
+                /></a>
+                <a href="#" class="dropdown__link"
+                  >Авторские наборы
+                  <img
+                    src="assets/images/icons/arrow-hover-right.svg"
+                    alt="arrow"
+                /></a>
+              </div>
+            </div>
+            <div class="dropdown__group">
+              <p class="dropdown__title">Для него</p>
+              <div class="dropdown__links">
+                <a href="#" class="dropdown__link"
+                  >Мужские букеты
+                  <img
+                    src="assets/images/icons/arrow-hover-right.svg"
+                    alt="arrow"
+                /></a>
+                <a href="#" class="dropdown__link"
+                  >На праздник
+                  <img
+                    src="assets/images/icons/arrow-hover-right.svg"
+                    alt="arrow"
+                /></a>
+                <a href="#" class="dropdown__link"
+                  >Для смокинга
+                  <img
+                    src="assets/images/icons/arrow-hover-right.svg"
+                    alt="arrow"
+                /></a>
+              </div>
+            </div>
+            <div class="dropdown__group">
+              <p class="dropdown__title">Для нее</p>
+              <div class="dropdown__links">
+                <a href="#" class="dropdown__link"
+                  >Женские букеты
+                  <img
+                    src="assets/images/icons/arrow-hover-right.svg"
+                    alt="arrow"
+                /></a>
+                <a href="#" class="dropdown__link"
+                  >101 Набор
+                  <img
+                    src="assets/images/icons/arrow-hover-right.svg"
+                    alt="arrow"
+                /></a>
+                <a href="#" class="dropdown__link"
+                  >На праздник
+                  <img
+                    src="assets/images/icons/arrow-hover-right.svg"
+                    alt="arrow"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown">
+            <div class="dropdown__group">
+              <p class="dropdown__title">Популярное</p>
+              <div class="dropdown__links">
+                <a href="#" class="dropdown__link"
+                  >Коллекция Simple
+                  <img
+                    src="assets/images/icons/arrow-hover-right.svg"
+                    alt="arrow"
+                /></a>
+                <a href="#" class="dropdown__link"
+                  >Бестселлеры
+                  <img
+                    src="assets/images/icons/arrow-hover-right.svg"
+                    alt="arrow"
+                /></a>
+                <a href="#" class="dropdown__link"
+                  >Коробки с цветами
+                  <img
+                    src="assets/images/icons/arrow-hover-right.svg"
+                    alt="arrow"
+                /></a>
+                <a href="#" class="dropdown__link"
+                  >Огромные букеты
+                  <img
+                    src="assets/images/icons/arrow-hover-right.svg"
+                    alt="arrow"
+                /></a>
+                <a href="#" class="dropdown__link"
+                  >Вдохновение брендом
+                  <img
+                    src="assets/images/icons/arrow-hover-right.svg"
+                    alt="arrow"
+                /></a>
+                <a href="#" class="dropdown__link"
+                  >По поводу
+                  <img
+                    src="assets/images/icons/arrow-hover-right.svg"
+                    alt="arrow"
+                /></a>
+                <a href="#" class="dropdown__link"
+                  >Event
+                  <img
+                    src="assets/images/icons/arrow-hover-right.svg"
+                    alt="arrow"
+                /></a>
+                <a href="#" class="dropdown__link"
+                  >Монобукеты
+                  <img
+                    src="assets/images/icons/arrow-hover-right.svg"
+                    alt="arrow"
+                /></a>
+                <a href="#" class="dropdown__link"
+                  >Авторские букеты
+                  <img
+                    src="assets/images/icons/arrow-hover-right.svg"
+                    alt="arrow"
+                /></a>
+                <a href="#" class="dropdown__link"
+                  >Комната цветов
+                  <img
+                    src="assets/images/icons/arrow-hover-right.svg"
+                    alt="arrow"
+                /></a>
+                <a href="#" class="dropdown__link"
+                  >Детские букеты
+                  <img
+                    src="assets/images/icons/arrow-hover-right.svg"
+                    alt="arrow"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown-card">
+            <a href="#">
+              <div class="dropdown-card__bg">
+                <div class="dropdown-card__hover">
+                  <p class="dropdown-card__title">Подарки</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="dropdown-card">
+            <a href="#">
+              <div class="dropdown-card__bg">
+                <div class="dropdown-card__hover">
+                  <p class="dropdown-card__title">Подарки</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="dropdown-wrapper city" data-dropdown="city">
+          <div class="dropdown">
+            <div class="dropdown__group">
+              <div class="dropdown__links">
+                <a href="#" class="dropdown__link">Махачкала</a>
+                <a href="#" class="dropdown__link">Каспийск</a>
+                <a href="#" class="dropdown__link">Дербент</a>
+                <a href="#" class="dropdown__link">Хасавюрт</a>
+                <a href="#" class="dropdown__link">Кизилюрт</a>
+                <a href="#" class="dropdown__link">Кизляр</a>
+                <a href="#" class="dropdown__link">Грозный</a>
+                <a href="#" class="dropdown__link">Москва</a>
+                <a href="#" class="dropdown__link">Москва</a>
+                <a href="#" class="dropdown__link">Москва</a>
+                <a href="#" class="dropdown__link">Москва</a>
+                <a href="#" class="dropdown__link">Москва</a>
+                <a href="#" class="dropdown__link">Кизилюрт</a>
+                <a href="#" class="dropdown__link">Кизилюрт</a>
+                <a href="#" class="dropdown__link">Кизилюрт</a>
+                <a href="#" class="dropdown__link">Кизилюрт</a>
+                <a href="#" class="dropdown__link">Кизилюрт</a>
+                <a href="#" class="dropdown__link">Кизилюрт</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="advise advise-b-bottom">
+            <a href="#" class="advise__title">
+              <p>Избранное</p>
+            </a>
+          </div>
+
+        <section class="none-fav">
+          <div class="none-fav__content">
+              <img src="assets/images/icons/box.svg" alt="box" class="none-fav__img">
+              <p class="none-fav__title">Пусто</p>
+              <p class="none-fav__desc">
+                Вы еще не добавили ни одного 
+                товара в избранное
+              </p>
+              <a href="/" class="none-fav__link">
+                <p>На главную</p>
+                <img src="assets/images/icons/arrow-right.svg" alt="arrow">
+            </a>
+          </div>
+        </section>
+
+    
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__block footer__block-desc">
+          <img src="assets/images/logo.svg" class="footer__logo" alt="logo" />
+          <p class="footer__desc">
+            2021 © Madetolove. Все права защищены. Незаконное копирование
+            преследуется по закону.
+          </p>
+        </div>
+        <div class="footer__block">
+          <a class="footer__text" href="#">О нас</a>
+          <a class="footer__text" href="#">Новости</a>
+          <a class="footer__text" href="#">Список вакансий</a>
+          <a class="footer__text" href="#">Контакты</a>
+        </div>
+        <div class="footer__block">
+          <a class="footer__text" href="#">Информация о доставке</a>
+          <a class="footer__text" href="#">Информация об оплате</a>
+          <a class="footer__text" href="#">Возврат товара</a>
+          <a class="footer__text" href="#">Как хранить цветы</a>
+        </div>
+        <div class="footer__block">
+          <a class="footer__text" href="#">Юридическая информация</a>
+          <a class="footer__text" href="#">Публичная оферта</a>
+          <a class="footer__text" href="#">Политика конфеденциальности</a>
+        </div>
+        <div class="footer__block footer__block-mob">
+          <img src="assets/images/logo.svg" class="footer__logo" alt="logo" />
+          <p class="footer__desc">
+            2021 © Madetolove. Все права защищены. Незаконное копирование
+            преследуется <br />
+            по закону.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+
+
+    <script src="assets/js/dropdown.js"></script>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/modal.js"></script>
+    <script src="assets/js/cart.js"></script>
+    <script src="assets/js/favorites.js"></script>
+  </body>
+</html>

@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Madetolove - Главная</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="favicon.png" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="order-header">
+      <div class="container">
+        <a href="/" class="order-header__back">
+          <img src="assets/images/icons/arrow-left.svg" alt="arrow" />
+          <p>Вернуться в магазин</p>
+        </a>
+
+        <a href="/" class="order-header__logo">
+          <img src="assets/images/logo.svg" alt="madetolove" />
+        </a>
+      </div>
+    </header>
+
+    <main class="main-order">
+      <div class="container">
+        <section class="order">
+          <form action="#" class="order__content">
+            <div class="order__left">
+              <div class="order__left-title">Способ доставки</div>
+              <div class="order__left-content">
+                <label class="order__left-radio checked-radio" for="delivery-1">
+                  <input
+                    name="delivery"
+                    value="1"
+                    class="order__left-check"
+                    checked="checked"
+                    type="radio"
+                    id="delivery-1"
+                  />
+                  <span></span>
+                  <div class="order__left-content-wrapper">
+                    <p class="order__left-content-title">В пределах МКАД</p>
+                    <div class="order__left-content-sub">400 ₽</div>
+                  </div>
+                </label>
+
+                <label class="order__left-radio" for="delivery-2">
+                  <input
+                    name="delivery"
+                    value="2"
+                    class="order__left-check"
+                    type="radio"
+                    id="delivery-2"
+                  />
+                  <span></span>
+                  <div class="order__left-content-wrapper">
+                    <p class="order__left-content-title">За пределами МКАД</p>
+                    <div class="order__left-content-sub">
+                      Цена зависит от района
+                    </div>
+                  </div>
+                </label>
+
+                <label class="order__left-radio" for="delivery-3">
+                  <input
+                    name="delivery"
+                    value="3"
+                    class="order__left-check"
+                    type="radio"
+                    id="delivery-3"
+                  />
+                  <span></span>
+                  <div class="order__left-content-wrapper">
+                    <p class="order__left-content-title">За пределами МКАД</p>
+                    <div class="order__left-content-sub">Бесплатно</div>
+                  </div>
+                </label>
+              </div>
+
+              <div class="order__left-title">Адрес доставки</div>
+              <div class="order__left-content">
+                <div class="order__left-inp order__left-inp-date">
+                  <input name="date" type="date" class="added-date click-focus required-inp"  />
+                  <p class="order__left-inp-title">
+                    Дата доставки <span>*</span>
+                  </p>
+                  
+                </div>
+                <div class="order__left-inp order__left-inp_select">
+                  
+                  <div class="custom-select" style="width: 100%">
+                    <select name="time" class="time-select" required>
+                      <option value="dis" disabled selected hidden></option>
+                      <option value="12:00 – 19:00">
+                        12:00 – 19:00
+                      </option>
+                      <option value="13:00 – 19:00">13:00 – 19:00</option>
+                      <option value="14:00 – 19:00">14:00 – 19:00</option>
+                      <option value="15:00 – 19:00">15:00 – 19:00</option>
+                      <option value="16:00 – 19:00">16:00 – 19:00</option>
+                      <option value="17:00 – 19:00">17:00 – 19:00</option>
+                      <option value="18:00 – 19:00">18:00 – 19:00</option>
+                      <option value="19:00 – 20:00">19:00 – 20:00</option>
+                    </select>
+                  </div>
+
+                  <p class="order__left-inp-title order__left-inp-title-sel">
+                    Время доставки <span>*</span>
+                  </p>
+                  
+                 
+                </div>
+                <div class="order__left-inp order__left-inp_full">
+                  <input
+                    name="address"
+                    type="text"
+                    class="click-focus required-inp"
+                    
+                  />
+                  <p class="order__left-inp-title">
+                    Адрес доставки <span>*</span>
+                  </p>
+                  
+                </div>
+
+                <div class="order__left-content-row" data-hidden="address">
+                  <div class="order__left-inp">
+                    <input name="entrance" type="text" class="click-focus" />
+
+                    <p class="order__left-inp-title">Подъезд</p>
+                  </div>
+                  <div class="order__left-inp">
+                    <input name="floor" type="text" class="click-focus"  />
+
+                    <p class="order__left-inp-title">Этаж</p>
+                  </div>
+                  <div class="order__left-inp">
+                    <input name="flat" type="text" class="click-focus" />
+                    <p class="order__left-inp-title">Квартира</p>
+                  </div>
+                  <div class="order__left-inp">
+                    <input name="intercom" type="text" class="click-focus" />
+                    <p class="order__left-inp-title">Домофон</p>
+                  </div>
+                </div>
+
+                <div class="order__left-content-checkbox" data-checkbox="address">
+                  <input
+                    id="privateHouse"
+                    type="checkbox"
+                    name="privateHouse"
+                    value="Частный дом"
+                    class="switch"
+                  />
+                  <label for="privateHouse">Частный дом</label>
+                </div>
+              </div>
+
+              <div class="order__left-title">Ваши данные</div>
+              <div class="order__left-content">
+                <div class="order__left-inp">
+                  <input name="userName" type="text" class="click-focus required-inp" required />
+                  <p class="order__left-inp-title">
+                    Как к Вам обращаться? <span>*</span>
+                  </p>
+                  
+                </div>
+                <div class="order__left-inp">
+                  <input name="tel" type="number" class="click-focus required-inp" required />
+                  <p class="order__left-inp-title">
+                    Номер телефона <span>*</span>
+                  </p>
+                  
+                </div>
+                <div class="order__left-inp order__left-inp_full">
+                  <input
+                    name="email"
+                    type="text"
+                    class="click-focus"
+                  />
+                  <p class="order__left-inp-title">
+                    Электронная почта
+                  </p>
+                  
+                </div>
+
+                <div class="order__left-inp order__left-inp_textarea" >
+                  <textarea name="comment" class="click-focus"></textarea>
+                  <p class="order__left-inp-title">
+                    Комментарий и пожелания
+                  </p>
+  
+           
+                </div>
+                
+              </div>
+
+              <div class="order__left-title">
+                <div>Получатель</div>
+                <div class="order__left-content-checkbox" data-checkbox-2="recipient">
+                  <input
+                    id="recipient"
+                    type="checkbox"
+                    name="recipient"
+                    value="Получатель другой человек"
+                    class="switch"
+                    
+                  />
+                  <label for="recipient">Получатель другой человек</label>
+                </div>
+              </div>
+              <div class="order__left-content hidden" data-hidden-2="recipient">
+                <div class="order__left-inp">
+                  <input name="userName2" type="text" class="click-focus" disabled="disabled" />
+                  <p class="order__left-inp-title">
+                    Имя получателя
+                  </p>
+                </div>
+                <div class="order__left-inp">
+                 
+                  <input name="tel2" type="number" class="click-focus" disabled="disabled" />
+                  <p class="order__left-inp-title">
+                    Номер телефона получателя
+                  </p>
+                </div>
+
+                <div class="order__left-inp order__left-inp_textarea" >
+                  
+  
+                  <textarea name="postcard" class="click-focus" disabled="disabled"></textarea>
+                  <p class="order__left-inp-title">
+                    Текст открытки
+                  </p>
+                </div>
+                
+              </div>
+
+              <div class="order__left-title">Способ оплаты</div>
+              <div class="order__left-content">
+                <label class="order__left-radio checked-radio" for="payment-1">
+                  <input
+                    name="payment"
+                    value="1"
+                    class="order__left-check"
+                    checked="checked"
+                    type="radio"
+                    id="payment-1"
+                  />
+                  <span></span>
+                  <div class="order__left-content-wrapper">
+                    <p class="order__left-content-title">Картой онлайн</p>
+                    <div class="order__left-content-img">
+                      <img src="assets/images/icons/payment-1.svg" alt="payment">
+                      <img src="assets/images/icons/payment-2.svg" alt="payment">
+                      <img src="assets/images/icons/payment-3.svg" alt="payment">
+                      <img src="assets/images/icons/payment-4.svg" alt="payment">
+                    </div>
+                  </div>
+                </label>
+
+                <label class="order__left-radio" for="payment-2">
+                  <input
+                    name="payment"
+                    value="2"
+                    class="order__left-check"
+                    type="radio"
+                    id="payment-2"
+                  />
+                  <span></span>
+                  <div class="order__left-content-wrapper">
+                    <p class="order__left-content-title">Электронный кошелек</p>
+                    <div class="order__left-content-img">
+                      <img src="assets/images/icons/payment-5.svg" alt="payment">
+                      <img src="assets/images/icons/payment-6.svg" alt="payment">
+                    </div>
+                  </div>
+                </label>
+
+                <label class="order__left-radio order__left-radio_center" for="payment-3">
+                  <input
+                    name="payment"
+                    value="3"
+                    class="order__left-check"
+                    type="radio"
+                    id="payment-3"
+                  />
+                  <span></span>
+                  <div class="order__left-content-wrapper">
+                    <p class="order__left-content-title">Наличными при получении</p>
+                  </div>
+                </label>
+              </div>
+
+
+              <label class="checkbox path">
+                <input type="checkbox" required>
+                <svg viewBox="0 0 21 21">
+                    <path d="M5,10.75 L8.5,14.25 L19.4,2.3 C18.8333333,1.43333333 18.0333333,1 17,1 L4,1 C2.35,1 1,2.35 1,4 L1,17 C1,18.65 2.35,20 4,20 L17,20 C18.65,20 20,18.65 20,17 L20,7.99769186"></path>
+                </svg>
+
+                <p>Я согласен на обработку персональных данных</p>
+            </label>
+              
+
+            </div>
+            <div class="order__right">
+              <div class="order__right-cards">
+                <div class="order__right-card">
+                  <div
+                    class="order__right-image"
+                    style="background-image: url(assets/images/card-2.png)"
+                  >
+                    <div class="order__right-fav fav"></div>
+                  </div>
+
+                  <div class="order__right-content">
+                    <div class="order__right-top">
+                      <div class="order__right-title">
+                        Набор из полевых цветов (15 шт)
+                      </div>
+                      <div class="order__right-desc">
+                        Фритиллярия, Ранункулюс, Антуриум, Гортензия
+                        (Гидрангия), Роза, Вибурнум, Тюльпан, Нерине, Спирея,
+                        Диантус гвоздичн...
+                      </div>
+                    </div>
+                    <div class="order__right-bottom">
+                      <div class="order__right-length">x1</div>
+                      <div class="order__right-price">860 ₽</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="order__right-card">
+                  <div
+                    class="order__right-image"
+                    style="background-image: url(assets/images/card-2.png)"
+                  >
+
+                    <div class="order__right-fav fav"></div>
+                  </div>
+
+                  <div class="order__right-content">
+                    <div class="order__right-top">
+                      <div class="order__right-title">
+                        Набор из полевых цветов (15 шт)
+                      </div>
+                      <div class="order__right-desc">
+                        Фритиллярия, Ранункулюс, Антуриум, Гортензия
+                        (Гидрангия), Роза, Вибурнум, Тюльпан, Нерине, Спирея,
+                        Диантус гвоздичн...
+                      </div>
+                    </div>
+                    <div class="order__right-bottom">
+                      <div class="order__right-length">x1</div>
+                      <div class="order__right-price">860 ₽</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="order__right-footer">
+                <div class="order__right-info">
+                  <ul>
+                    <li>
+                      <p>Промокод (PRESTIGE)</p>
+                      <p class="text-red">- 450 ₽</p>
+                    </li>
+                    <li>
+                      <p>Доставка</p>
+                      <p>400 ₽</p>
+                    </li>
+
+                    <li class="order__right-final">
+                      <p>Итого:</p>
+                      <p>18 360 ₽</p>
+                    </li>
+                  </ul>
+                </div>
+                <button type="submit" class="order__right-btn">
+                  <p>Перейти к оплате</p>
+                  <p class="order__right-err hidden">
+                    Заполните все необходимые поля!
+                  </p>
+                </button>
+              </div>
+            </div>
+          </form>
+        </section>
+      </div>
+    </main>
+
+
+    <script src="assets/js/dropdown.js"></script>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/modal.js"></script>
+    <script src="assets/js/select.js"></script>
+    <script src="assets/js/toggle.js"></script>
+    <script src="assets/js/radio.js"></script>
+    <script src="assets/js/auto-time.js"></script>
+    <script src="assets/js/focus-inp.js"></script>
+    <script src="assets/js/favorites.js"></script>
+    <script src="assets/js/validate.js"></script>
+  </body>
+</html>
